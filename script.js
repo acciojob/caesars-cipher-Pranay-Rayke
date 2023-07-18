@@ -32,12 +32,12 @@ const lookup = {
 };
 
 let A = "A".charCodeAt(0);
-let B = "Z".charCodeAt(0);
+let Z = "Z".charCodeAt(0);
 function rot13(encodedStr) {
   //let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	let ans = "";
-	for(let i=0;i<encodedStr.length;i++)
+	for(let i=0; i<encodedStr.length; i++)
 		{
 			let currentChar = encodedStr[i].charCodeAt(0);
 			if(currentChar <= Z && currentChar >= A){
